@@ -407,7 +407,7 @@ header::before {
   width: 100%;
 }
 .swiper-slide {
-  min-width: 375px;
+  min-width: 360px;
 }
 .client-card {
   padding: 5px;

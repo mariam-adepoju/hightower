@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/4cea918ca9.js"
-      crossorigin="anonymous"
-    ></script>
     <title>HighTowers | Travel &amp; Tour Website</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +15,11 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav>
@@ -257,23 +258,11 @@
         eyes of our valued clients.
       </p>
       <!-- Slider main container -->
-      <div
-        class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
-      >
+      <div class="swiper">
         <!-- Additional required wrapper -->
-        <div
-          class="swiper-wrapper"
-          id="swiper-wrapper-8ac1943c9f22d7103"
-          aria-live="polite"
-        >
+        <div class="swiper-wrapper">
           <!-- Slides -->
-          <div
-            class="swiper-slide swiper-slide-active"
-            role="group"
-            aria-label="1 / 4"
-            data-swiper-slide-index="0"
-            style="width: 178px; margin-right: 20px"
-          >
+          <div class="swiper-slide">
             <div class="client-card">
               <div class="client-content">
                 <div class="client-rating">
@@ -300,13 +289,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="swiper-slide swiper-slide-next"
-            role="group"
-            aria-label="2 / 4"
-            data-swiper-slide-index="1"
-            style="width: 178px; margin-right: 20px"
-          >
+          <div class="swiper-slide">
             <div class="client-card">
               <div class="client-content">
                 <div class="client-rating">
@@ -333,13 +316,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="swiper-slide"
-            role="group"
-            aria-label="3 / 4"
-            data-swiper-slide-index="2"
-            style="width: 178px; margin-right: 20px"
-          >
+          <div class="swiper-slide">
             <div class="client-card">
               <div class="client-content">
                 <div class="client-rating">
@@ -366,13 +343,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="swiper-slide"
-            role="group"
-            aria-label="4 / 4"
-            data-swiper-slide-index="3"
-            style="width: 178px; margin-right: 20px"
-          >
+          <div class="swiper-slide">
             <div class="client-card">
               <div class="client-content">
                 <div class="client-rating">
@@ -400,11 +371,6 @@
             </div>
           </div>
         </div>
-        <span
-          class="swiper-notification"
-          aria-live="assertive"
-          aria-atomic="true"
-        ></span>
       </div>
     </section>
     <footer id="contact">
@@ -471,5 +437,6 @@
         Copyright © 2025 Adepoju Mariam. All rights reserved.
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
