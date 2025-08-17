@@ -15,6 +15,10 @@
 body {
   font-family: "DM Sans", sans-serif;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   transition: 0.3s;
@@ -96,8 +100,8 @@ nav {
 .nav-links a {
   font-weight: 600;
   color: var(--white);
-  white-space: nowrap;
   display: inline-block;
+  white-space: nowrap;
   transition: transform 0.3s ease-in-out;
 }
 .nav-links a:hover {
@@ -190,10 +194,10 @@ header::before {
 }
 .header-content h1 {
   margin-bottom: 2rem;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: var(--text-dark);
-  line-height: 5.5rem;
+  line-height: 4.5rem;
   text-align: center;
 }
 .header-container h1 .hero-span {
@@ -554,6 +558,14 @@ footer {
   text-align: center;
 }
 @media (width > 540px) {
+  .header-content h1 {
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 5.5rem;
+    text-align: center;
+  }
   .destination-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -571,7 +583,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .client-container.section-container {
-    padding: 3rem 5rem;
+    padding: 5rem 3rem;
   }
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -602,9 +614,16 @@ footer {
     padding: 0px;
   }
   .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+    position: static;
+    width: fit-content;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none !important;
+    padding: 0px;
+  }
+  .nav-links a {
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
   }
   .nav-links li:last-child {
     display: none;
