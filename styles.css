@@ -432,6 +432,9 @@ header::before {
   color: var(--text-dark);
 }
 /* Client Section styling */
+.client-container.section-container {
+  padding: 3rem 2%;
+}
 .swiper {
   margin-top: 4rem;
   width: 100%;
