@@ -38,6 +38,7 @@ ScrollReveal({
 ScrollReveal().reveal('.header-content p', { delay: 500, origin: 'top' });
 ScrollReveal().reveal('.header-content h1', { delay: 1000, origin: 'left' });
 ScrollReveal().reveal('.header-btns', { delay: 1500, origin: 'bottom' });
+ScrollReveal().reveal('.header-image', { delay: 50, origin: 'right' });
 
 ScrollReveal().reveal('.destination-card', { interval: 500, origin: 'bottom', scale: 0.95 });
 
